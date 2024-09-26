@@ -10,18 +10,22 @@ class AppTheme {
         secondary: Colors.amber, // สีรอง
         onSecondary: Colors.black, // สีข้อความบนสีรอง
       ),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-        style: ElevatedButton.styleFrom(
-          backgroundColor:
-              Colors.blue.shade800, // สีพื้นหลังของปุ่ม ElevatedButton
-          foregroundColor: Colors.white, // สีข้อความในปุ่ม
-          minimumSize: Size(150, 50), // ขนาดขั้นต่ำของปุ่ม (กว้าง x สูง)
-          textStyle: TextStyle(
-            fontSize: 18, // ขนาดตัวอักษรของข้อความในปุ่ม
-            fontWeight: FontWeight.bold,
-          ), // น้ำหนักตัวอักษร
-        ),
+      appBarTheme: AppBarTheme(
+        backgroundColor: Colors.blue, // กำหนดสีของ AppBar
+        foregroundColor: Colors.white, // สีข้อความใน AppBar
       ),
+      // elevatedButtonTheme: ElevatedButtonThemeData(
+      //   style: ElevatedButton.styleFrom(
+      //     backgroundColor:
+      //         Colors.blue.shade800, // สีพื้นหลังของปุ่ม ElevatedButton
+      //     foregroundColor: Colors.white, // สีข้อความในปุ่ม
+      //     minimumSize: Size(150, 50), // ขนาดขั้นต่ำของปุ่ม (กว้าง x สูง)
+      //     textStyle: TextStyle(
+      //       fontSize: 18, // ขนาดตัวอักษรของข้อความในปุ่ม
+      //       fontWeight: FontWeight.bold,
+      //     ), // น้ำหนักตัวอักษร
+      //   ),
+      // ),
     );
   }
 }

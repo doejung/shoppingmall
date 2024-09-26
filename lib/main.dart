@@ -5,7 +5,7 @@ import 'package:shoppingmall/states/create_account.dart';
 import 'package:shoppingmall/states/rider_service.dart';
 import 'package:shoppingmall/states/saler_service.dart';
 import 'package:shoppingmall/utility/my_constant.dart';
-// import 'package:shoppingmall/utility/app_theme.dart'; // นำเข้าธีมที่สร้างขึ้น
+import 'package:shoppingmall/utility/app_theme.dart'; // นำเข้าธีมที่สร้างขึ้น
 
 final Map<String, WidgetBuilder> map = {
   '/auhen': (BuildContext context) => Authen(),
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       title: MyConstant.appNmae,
       routes: map,
       initialRoute: initialRoute,
-      // theme: AppTheme.theme, // ใช้ธีมที่กำหนด,
+      theme: AppTheme.theme, // ใช้ธีมที่กำหนด,
     );
   }
 }
