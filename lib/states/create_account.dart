@@ -37,20 +37,20 @@ class _CreateAccountState extends State<CreateAccount> {
       if (locationService == LocationPermission.denied) {
         locationPermission = await Geolocator.requestPermission();
         if (locationPermission == LocationPermission.deniedForever) {
-          MyDialog().alertLocationService(context);
+          MyDialog().alertLocationService(context, 'ไม่อนุญาตแชร์ Location','โปรดแชร์ Location');
         } else {
           // Find LatLng
         }
       } else {
         if (locationPermission == LocationPermission.deniedForever) {
-          MyDialog().alertLocationService(context);
+          MyDialog().alertLocationService(context, 'ไม่อนุญาตแชร์ Location','โปรดแชร์ Location');
         } else {
           // Find LatLng
         }
       }
     } else {
       print('service loacation close');
-      MyDialog().alertLocationService(context);
+      MyDialog().alertLocationService(context, 'Location Service ปิดอยู่ ?', 'กรุณาเปิด Location Service ด้วยคะ');
     }
   }
 
